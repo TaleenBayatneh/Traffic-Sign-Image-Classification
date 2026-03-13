@@ -1,4 +1,4 @@
-﻿# Traffic Sign Image Classification
+# Traffic Sign Image Classification
 
 A comparative study of three machine learning classifiers applied to traffic sign recognition.
 
@@ -17,6 +17,36 @@ The three models compared are:
 - **Naive Bayes** - probabilistic baseline
 - **Decision Tree** - interpretable tree-based classifier
 - **MLP (Feedforward Neural Network)** - multi-layer perceptron
+
+## Dataset
+
+> **Note:** The dataset is not included in this repository due to its large size (~3,273 images). You must download it separately and place it in the `all_data/` folder before running the project.
+
+The dataset consists of traffic sign images organized into three classes:
+
+| Class | Images |
+|-------|--------|
+| `stop` | 797 |
+| `no_entry` | 932 |
+| `speed_limit` | 1,544 |
+| **Total** | **3,273** |
+
+**Expected folder structure inside `all_data/`:**
+
+```
+all_data/
+|-- stop/
+|   |-- img1.jpg
+|   +-- ...
+|-- no_entry/
+|   |-- img1.jpg
+|   +-- ...
++-- speed_limit/
+    |-- img1.jpg
+    +-- ...
+```
+
+The dataset is automatically split into 80% training and 20% testing on the first run.
 
 ## Project Structure
 
